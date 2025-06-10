@@ -19,5 +19,6 @@ while True:
     }
 
     print(f"Sending to Kafka: {traffic_data}")
-    producer.send('traffic_topic', traffic_data)
+    producer.send('traffic-data', traffic_data)  # <-- changed here
     time.sleep(1)
+
